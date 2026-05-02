@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>E.G. // LOCALHOST_BACKUP // DO_NOT_DISTRIBUTE</title>
+    
+    <!-- 
+    ======================================================================
+    FILE CORRUPTED: SECTOR 4
+    LAST MODIFIED: 14/11/1996 02:14 AM
+    USER: E_GEVA
+    
+    VGhleSBhcmUgaW4gdGhlIGJ1aWxkaW5nLiBJIGxvY2tlZCB0aGUgTC1NaXJyb3Iu
+    VGhlIHBhc3N3b3JkIGlzIHRoZSBkZXN0cnVjdGlvbiBvcmRlci4=
+    ======================================================================
+    -->
+
+    <style>
+        body {
+            background-color: #000000;
+            color: #00FF00;
+            font-family: 'Courier New', Courier, monospace;
+            cursor: crosshair;
+        }
+        a { color: #00FF00; text-decoration: none; }
+        a:hover { background-color: #00FF00; color: #000000; }
+        .redacted {
+            background-color: #00FF00; /* נראה כמו טקסט מסומן שאי אפשר לקרוא */
+            color: #00FF00;
+        }
+        .redacted::selection {
+            background-color: #FF0000;
+            color: #FFFFFF;
+        }
+        .hidden-text {
+            color: #000000; /* טקסט שחור על רקע שחור - אפשר לראות רק אם מסמנים עם העכבר */
+        }
+        .glitch {
+            animation: glitch-anim 0.2s linear infinite;
+        }
+        @keyframes glitch-anim {
+            0% { opacity: 1; transform: translate(0); }
+            20% { opacity: 0.8; transform: translate(-2px, 1px); }
+            40% { opacity: 0.9; transform: translate(2px, -1px); }
+            60% { opacity: 1; transform: translate(0); }
+            80% { opacity: 0.9; transform: translate(-1px, -1px); }
+            100% { opacity: 1; transform: translate(0); }
+        }
+    </style>
+
+    <script>
+        // הודעה שקופצת רק למי שפותח את ה-Console של הדפדפן (F12)
+        console.log("%cWARNING: UNAUTHORIZED ACCESS DETECTED", "color: red; font-size: 20px; font-weight: bold;");
+        console.log("Tel-Ad Security Protocol v2.0 initiated.");
+        console.log("Tracing IP...");
+        console.log("If you are reading this, Erez is gone. Find the physical tapes in Petah Tikva.");
+        
+        function checkPasscode() {
+            var input = document.getElementById("cmd_line").value;
+            if(input === "0396" || input.toUpperCase() === "DESTRUCTION_ORDER") {
+                document.getElementById("terminal_output").innerHTML = "<br><font color='#FF0000'>ACCESS GRANTED. L-MIRROR NODE UNLOCKED.</font><br>Downloading protocol... <a href='#'>[LINK CORRUPTED - REQUIRE ADMIN OVERRIDE]</a>";
+            } else if (input !== "") {
+                document.getElementById("terminal_output").innerHTML = "<br>ERROR: Invalid sequence. Attempt logged.";
+            }
+        }
+    </script>
+</head>
+
+<body dir="ltr" onload="document.getElementById('cmd_line').focus()">
+
+    <pre style="color: #008800; font-size: 10px;">
+    _______ _____ _              ___  _____  
+    |__   __|  ___| |            / _ \|  __ \ 
+       | |  | |__ | |  ______   | | | | |  | |
+       | |  |  __|| | |______|  | | | | |  | |
+       | |  | |___| |____       | |_| | |__| |
+       |_|  |____/|______|       \___/|_____/ 
+    SYSTEM OVERRIDE // KIRYAT ARYEH MAINFRAME
+    </pre>
+
+    <marquee scrollamount="15" width="100%" bgcolor="#FF0000" style="color:#FFF; font-weight:bold;">
+        CRITICAL ERROR: CONNECTION TO L-MIRROR SEVERED. DATA LOSS IMMINENT.
+    </marquee>
+
+    <br><br>
+
+    <div dir="rtl" style="max-width: 800px; margin: auto; border: 1px solid #00FF00; padding: 15px;">
+        <u><b>ארז גבע // יומן מערכת פנימי</b></u><br><br>
+        
+        <b>תאריך:</b> 13/11/96<br>
+        <b>סטטוס:</b> <span class="glitch" style="color:red;">אזהרה</span><br><br>
+        
+        הם עלו עליי. מנהל המחלקה שאל היום למה משכתי כל כך הרבה רוחב פס לשרת המקומי בחדר 402. אמרתי לו שזה גיבוי שגרתי של תעבורת הקול.<br>
+        אני לא חושב שהוא האמין לי. <br><br>
+        
+        האלגוריתם של "תל-עד" לא נועד לנטר שיחות טלפון, הוא נועד <span class="redacted">לשדר אותות בחזרה לתוך המוח של המשתמשים</span>. כשהפעלתי את הפרוטוקול אתמול בלילה, שמעתי את זה. הקולות לא באו מהאוזניות. <br><br>
+        
+        השארתי את הקלטת הראשונה במחסן הראשי. אם משהו קורה, חפשו את <span class="hidden-text">המספר שמוחבא בספקטרוגרם של הסרטון.</span>
+        <br><br>
+        
+        <hr color="#00FF00">
+        
+        > מערכת הפעלה TEL-AD OS v4.11<br>
+        > הקלד קוד אישור (4 ספרות) או סיסמת מנהל לביטול פקודת ההשמדה:<br>
+        C:\> <input type="text" id="cmd_line" style="background-color:#000; color:#00FF00; border:none; outline:none; font-family:Courier New; font-size:16px;" onchange="checkPasscode()" autocomplete="off" autofocus>
+        
+        <div id="terminal_output"></div>
+    </div>
+
+    <br><br>
+    
+    <center>
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="1" height="1" alt="tracking_pixel">
+        <font size="1" color="#003300">
+            SYS_ADMIN: EREZ.G | IP: 192.168.96.14 | NODES: 12/1000 | <a href="mailto:erez_admin@tel-ad.co.il">CONTACT_SYSADMIN</a>
+        </font>
+    </center>
+
+</body>
+</html>
